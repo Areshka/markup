@@ -1,0 +1,8 @@
+design/
+.DS_Store
+Thumbs.db
+.idea
+*.log
+*.psd
+*.ai
+*.pdf
