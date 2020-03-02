@@ -9,6 +9,13 @@ html {
   color: #999;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none;
 }
@@ -381,14 +388,11 @@ img {
 }
 
 .services__title {
-  background-color: #fff;
   margin-top: 0;
   margin-bottom: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 0.933rem;
+  font-weight: 400;
   text-align: center;
-  text-transform: uppercase;
   color: #333;
 }
 
@@ -400,7 +404,6 @@ img {
 .facts {
   padding: 30px 0;
   background-color: #95e1d3;
-  font-family: "Montserrat";
   font-size: 0.933rem;
   line-height: 1.25;
   font-weight: 400;
@@ -525,11 +528,10 @@ img {
 .team__name {
   margin-top: 0;
   margin-bottom: 7px;
-  font-family: "Montserrat", serif;
   font-size: 0.933rem;
   line-height: 1.25;
+  font-weight: 400;
   color: #333;
-  text-transform: uppercase;
 }
 
 .team__profession {
@@ -622,8 +624,8 @@ img {
 .work__title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-family: "Montserrat", serif;
-  font-size: 14px;
+  font-size: 0.933rem;
+  font-weight: 400;
   line-height: 1.25;
   text-transform: uppercase;
 }
@@ -767,10 +769,8 @@ img {
 .reviews__name {
   margin-top: 10px;
   margin-bottom: 6px;
-  font-family: "Montserrat", serif;
   font-size: 0.933rem;
   line-height: 1.25;
-  text-transform: uppercase;
   font-weight: 400;
   color: #333;
 }
@@ -859,11 +859,9 @@ img {
 .blog__title {
   margin: 0;
   margin-bottom: 10px;
-  font-family: "Montserrat";
   font-weight: 400;
   text-align: center;
   font-size: 0.905rem;
-  text-transform: uppercase;
 }
 
 .blog__title a {
@@ -1053,11 +1051,9 @@ input[type="email"]:hover {
 .footer-header {
   margin-top: 15px;
   margin-bottom: 36px;
-  font-family: "Montserrat";
   font-size: 0.933rem;
   font-weight: 400;
   line-height: 1.25;
-  text-transform: uppercase;
   color: #333;
 }
 
@@ -1083,6 +1079,7 @@ input[type="email"]:hover {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 0.8rem;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
