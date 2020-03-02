@@ -322,7 +322,11 @@ img {
   text-transform: none;
 }
 
-.block-header::after {
+.red-line {
+  position: relative;
+}
+
+.red-line::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -332,6 +336,7 @@ img {
   background-color: #f38181;
   transform: translateX(-50%);
 }
+
 
 .services {
   padding-top: 50px;
@@ -710,22 +715,17 @@ img {
 }
 
 .testimonial__name {
-  margin-bottom: 20px;
   position: relative;
+  margin-bottom: 20px;
   padding-left: 70px;
   font-family: "Kaushan Script", cursive;
   color: #333;
   line-height: 1.25;
 }
 
-.testimonial__name::before {
-  content: '';
-  position: absolute;
+.testimonial__name.red-line::after {
   left: 0;
   top: 50%;
-  width: 60px;
-  height: 3px;
-  background-color: #f38181;
   transform: translateY(-50%);
 }
 
@@ -785,14 +785,9 @@ img {
   font-weight: 300;
 }
 
-.reviews__profession::after {
-  content: '';
-  position: absolute;
+.reviews__profession::after {  
   bottom: 0;
-  left: 50%;
-  width: 60px;
-  height: 3px;
-  background-color: #f38181;
+  left: 50%;  
   transform: translateX(-50%);
 }
 
@@ -1455,7 +1450,7 @@ input[type="email"]:hover {
     text-align: left;
   }
 
-  .reviews__profession::after {
+  .reviews__profession.red-line::after {
     left: 0;
     transform: translateX(0);
   }
