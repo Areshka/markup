@@ -297,30 +297,25 @@ img {
 }
 
 .block-header {
+  position: relative;
+  margin: 0;
   margin-bottom: 35px;
+  padding-bottom: 40px;
+  font: 700 2rem "Montserat", sans-serif;
+  letter-spacing: .5px;
   text-align: center;
+  text-transform: uppercase;
   color: #333;
 }
 
-.block-header p,
-.block-header h2 {
-  margin: 0;
-}
-
-.block-header p {
+.block-header span {
+  display: block;
   margin-bottom: 12px;
   font: 400 1.6rem "Kaushan Script", cursive;
+  text-transform: none;
 }
 
-.block-header h2 {
-  position: relative;
-  padding-bottom: 40px;
-  letter-spacing: .5px;
-  font: 700 2rem "Montserat", sans-serif;
-  text-transform: uppercase;
-}
-
-.block-header h2::after {
+.block-header::after {
   content: '';
   position: absolute;
   bottom: 0;
