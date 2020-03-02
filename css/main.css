@@ -914,6 +914,138 @@ img {
   margin-right: 1px;
 }
 
+.page-footer {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.footer__info {
+  margin-bottom: 30px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-family: "Montserrat";
+  font-size: 3.067rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ccc;
+}
+
+.footer__info>p {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.follow-us {
+  margin-bottom: 33px;
+}
+
+.follow-us__tottal {
+  margin-top: 0;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.follow-us__tottal span {
+  font-size: 0.933rem;
+  font-weight: 300;
+}
+
+.follow-us__social {
+  display: flex;
+  align-items: center;
+}
+
+.follow-us__social span {
+  margin-right: 10px;
+  font-style: italic;
+}
+
+.follow-us__social ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.follow-us__social ul li {
+  margin-right: 12px;
+}
+
+.follow-us__social ul li:last-child {
+  margin-right: 0;
+}
+
+.follow-us__social ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.follow-us__social .icon {
+  width: 16px;
+  height: 16px;
+  fill: #95e1d3;
+}
+
+.subscribe__group {
+  text-align: center;
+}
+
+input[type="email"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 11px 15px;
+  border: 1px solid #e5e5e5;
+  font-weight: 300;
+  font-style: italic;
+  outline: none;
+  transition: border-color .3s linear;
+}
+
+input[type="email"]:hover {
+  border-color: #d1c6c6;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+::-moz-placeholder {
+  color: #ccc;
+}
+
+:-moz-placeholder {
+  color: #ccc;
+}
+
+:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.subscribe__btn {
+  padding: 11px 34px;
+  font-family: "Montserrat";
+  font-size: 0.933rem;
+  line-height: 1.25;
+  font-weight: 700;
+  background-color: #95e1d3;
+  cursor: pointer;
+  transition: background-color .3s linear;
+}
+
+.subscribe__btn:hover {
+
+  background-color: #67ddc7;
+}
 
 @media (min-width: 576px) {
 
