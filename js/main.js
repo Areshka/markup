@@ -1,14 +1,14 @@
+/*
+ * Плавный переход по якорю
+ */
 $(document).ready(function () {
   $(".nav__list").on("click", "a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
-
     //забираем идентификатор бока с атрибута href
     var id = $(this).attr('href'),
-
       //узнаем высоту от начала страницы до блока на который ссылается якорь
       top = $(id).offset().top;
-
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({
       scrollTop: top
@@ -148,3 +148,25 @@ function initMobileNav() {
     });
   };
 }(jQuery));
+
+/*
+ * Slick Slider Settings
+ */
+$(document).ready(function () {
+  $('.testimonial__slider').slick({
+    mobileFirst: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        dots: false,
+        arrows: true,
+        prevArrow: '<div class="prev"></div>',
+        nextArrow: '<div class="next"></div>',
+      }
+    }]
+  });
+});
