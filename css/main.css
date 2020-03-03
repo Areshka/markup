@@ -202,8 +202,8 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 1000px;
-  height: 1000px;
+  min-height: 100vh;
+  height: 100vh;
   padding: 50px 0;
   font: 400 0.933rem/1.25 "Montserrat", sans-serif;
   color: #fff;
@@ -337,10 +337,9 @@ img {
   transform: translateX(-50%);
 }
 
-
 .services {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .services__item {
@@ -350,6 +349,7 @@ img {
 }
 
 .services__item:last-child {
+  padding-bottom: 0;
   border-bottom: none;
 }
 
@@ -402,8 +402,7 @@ img {
 }
 
 .services__desc {
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
 .facts {
@@ -1144,7 +1143,7 @@ input[type="email"]:hover {
 
   .services {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
 
   .services__item {
@@ -1162,7 +1161,6 @@ input[type="email"]:hover {
   }
 
   .services__title {
-    font-weight: 600;
     text-align: left;
   }
 
@@ -1331,7 +1329,6 @@ input[type="email"]:hover {
     padding: 0 28px;
   }
 
-
   .nav__list--icon .nav__item {
     padding: 0 20px;
   }
@@ -1399,13 +1396,28 @@ input[type="email"]:hover {
   }
 
   .services__item {
+    position: relative;
     width: 50%;
     margin-bottom: 25px;
     padding-bottom: 22px;
+    border: none
   }
 
-  .services__item:nth-last-child(-n+2) {
-    border-bottom: none;
+  .services__item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+
+  .services__item:nth-child(2n+1)::after {
+    width: 200%;
+  }
+
+  .services__item:nth-last-child(-n+2)::after {
+    width: 0;
   }
 
   .facts {
@@ -1522,11 +1534,19 @@ input[type="email"]:hover {
   .services__item {
     padding-bottom: 45px;
     margin-bottom: 45px;
-    width: calc(33.3333%);
+    width: 33.3333%;
   }
 
-  .services__item:nth-last-child(-n+3) {
-    border-bottom: 0;
+  .services__item:nth-child(2n+1)::after {
+    width: 0;
+  }
+
+  .services__item:nth-child(3n+1)::after {
+    width: 300%;
+  }
+
+  .services__item:nth-last-child(-n+3)::after {
+    width: 0;
   }
 
   .services__icon {
