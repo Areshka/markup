@@ -947,7 +947,7 @@ img {
 
 .follow-us__total span {
   font-size: 0.933rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .follow-us__social {
@@ -985,6 +985,12 @@ img {
   width: 18px;
   height: 16px;
   fill: #95e1d3;
+  transition: fill .3s ease, transform .3s ease;
+}
+
+.follow-us__social .icon:hover {
+  fill: #44e7c9;
+  transform: scale(1.2);
 }
 
 .subscribe__group {
@@ -1035,7 +1041,7 @@ input[type="email"]:hover {
 }
 
 .subscribe__btn:hover {
-  background-color: #67ddc7;
+  background-color: #44e7c9;
 }
 
 .footer-blogs {
@@ -1069,6 +1075,10 @@ input[type="email"]:hover {
   margin-bottom: 15px;
 }
 
+.footer-blogs__img img {
+  max-width: 120px;
+}
+
 .footer-blogs__title {
   margin-top: -4px;
   margin-bottom: 0;
@@ -1095,6 +1105,7 @@ input[type="email"]:hover {
 }
 
 .instagram__wrapper img {
+  max-width: 88px;
   margin-right: 3px;
   margin-bottom: 3px;
 }
@@ -1126,7 +1137,7 @@ input[type="email"]:hover {
 }
 
 .copyright a:hover {
-  color: #f56969;
+  color: #e65757;
 }
 
 @media (min-width: 576px) {
@@ -1485,11 +1496,16 @@ input[type="email"]:hover {
   .footer-blogs {
     width: 50%;
     padding-right: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
+  }
+
+  .footer-blogs__item {
+    margin-bottom: 10px;
   }
 
   .instagram {
     width: 50%;
+    margin-bottom: 0;
     padding-left: 15px;
   }
 
@@ -1674,8 +1690,6 @@ input[type="email"]:hover {
   }
 
   .page-footer__wrapper {
-    display: flex;
-    flex-wrap: wrap;
     padding-bottom: 40px;
   }
 
