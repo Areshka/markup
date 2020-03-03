@@ -1400,7 +1400,7 @@ input[type="email"]:hover {
     width: 50%;
     margin-bottom: 25px;
     padding-bottom: 22px;
-    border: none
+    border: none;
   }
 
   .services__item::after {
