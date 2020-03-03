@@ -44,7 +44,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1230px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -202,9 +202,9 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 100vh;
-  height: 100vh;
-  padding: 70px 0 20px 0;
+  min-height: 1000px;
+  height: 1000px;
+  padding: 50px 0;
   font: 400 0.933rem/1.25 "Montserrat", sans-serif;
   color: #fff;
   background-color: #777d8d;
@@ -230,7 +230,7 @@ img {
 
 .banner p {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 33px;
   font-family: "Kaushan Script", cursive;
   font-size: 2.5rem;
   font-weight: 400;
@@ -307,7 +307,7 @@ img {
   position: relative;
   margin: 0;
   margin-bottom: 35px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   font: 700 2rem "Montserat", sans-serif;
   letter-spacing: .5px;
   text-align: center;
@@ -454,7 +454,7 @@ img {
 .team__avatar {
   position: relative;
   display: inline-block;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
   transition: box-shadow .5s ease, transform .5s ease;
 }
 
@@ -532,7 +532,7 @@ img {
 
 .team__name {
   margin-top: 0;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   font-size: 0.933rem;
   line-height: 1.25;
   font-weight: 400;
@@ -767,8 +767,8 @@ img {
 }
 
 .reviews__name {
-  margin-top: 10px;
-  margin-bottom: 6px;
+  margin-top: 13px;
+  margin-bottom: 5px;
   font-size: 0.933rem;
   line-height: 1.25;
   font-weight: 400;
@@ -785,9 +785,9 @@ img {
   font-weight: 300;
 }
 
-.reviews__profession::after {  
+.reviews__profession::after {
   bottom: 0;
-  left: 50%;  
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -810,7 +810,7 @@ img {
   position: relative;
   max-width: 385px;
   margin: 0 auto;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 }
 
 .blog__img a {
@@ -1066,12 +1066,12 @@ input[type="email"]:hover {
 
 .footer-blogs__img {
   flex-shrink: 0;
-  margin-right: 22px;
+  margin-right: 20px;
   margin-bottom: 15px;
 }
 
 .footer-blogs__title {
-  margin-top: 0;
+  margin-top: -4px;
   margin-bottom: 0;
   font-size: 0.8rem;
   font-weight: 400;
@@ -1111,11 +1111,12 @@ input[type="email"]:hover {
 .copyright {
   margin-right: -15px;
   margin-left: -15px;
-  padding: 19px 0;
+  padding: 20px 0;
   border-top: 1px solid #e5e5e5;
   font-family: "Montserrat";
   font-weight: 400;
   font-style: 0.933rem;
+  line-height: 1.25;
   text-align: center;
   color: #333;
 }
@@ -1486,15 +1487,17 @@ input[type="email"]:hover {
 
   .banner {
     background-position: 0 0;
+    padding-top: 30px;
   }
 
   .banner p {
     font-size: 4.8rem;
+    margin-bottom: 35px;
   }
 
   .banner__title {
     margin-bottom: 50px;
-    padding-bottom: 55px;
+    padding-bottom: 59px;
     font-size: 10rem;
     letter-spacing: -5px;
   }
@@ -1558,8 +1561,8 @@ input[type="email"]:hover {
   }
 
   .team {
-    padding-top: 100px;
-    padding-bottom: 102px;
+    padding-top: 102px;
+    padding-bottom: 99px;
   }
 
   .team .block-header {
@@ -1572,8 +1575,7 @@ input[type="email"]:hover {
   }
 
   .partners {
-    padding: 61px 0;
-    /* background-color: red; */
+    padding: 62px 0;
   }
 
   .partners__list {
@@ -1590,11 +1592,15 @@ input[type="email"]:hover {
   }
 
   .work {
-    padding-top: 100px;
+    padding-top: 104px;
+  }
+
+  .work .block-header {
+    margin-bottom: 41px;
   }
 
   .work__about {
-    margin-bottom: 80px;
+    margin-bottom: 99px;
     padding: 0 120px;
   }
 
@@ -1606,11 +1612,15 @@ input[type="email"]:hover {
 
   .testimonial {
     padding-top: 100px;
-    padding-bottom: 130px;
+    padding-bottom: 132px;
   }
 
   .testimonial__slider {
-    padding: 0 65px 0 85px;
+    padding: 0 65px 0 80px;
+  }
+
+  .testimonial__info {
+    margin-bottom: -5px;
   }
 
   .testimonial__name {
@@ -1618,7 +1628,7 @@ input[type="email"]:hover {
   }
 
   .reviews {
-    padding-top: 100px;
+    padding-top: 101px;
     padding-bottom: 62px;
   }
 
@@ -1627,7 +1637,7 @@ input[type="email"]:hover {
   }
 
   .reviews__item {
-    margin-bottom: 65px;
+    margin-bottom: 64px;
   }
 
   .blog {
@@ -1677,5 +1687,16 @@ input[type="email"]:hover {
   .instagram {
     width: 23.75%;
     padding-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+
+  .copyright {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
