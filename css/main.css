@@ -572,7 +572,6 @@ img {
 
 .work {
   padding-top: 50px;
-  background-color: #fff;
 }
 
 .work__about {
@@ -761,6 +760,7 @@ img {
 }
 
 .reviews__avatar img {
+  max-width: 110px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -1449,7 +1449,6 @@ input[type="email"]:hover {
 
   .reviews__item {
     display: flex;
-
   }
 
   .reviews__avatar {
