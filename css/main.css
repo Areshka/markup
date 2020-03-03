@@ -420,7 +420,7 @@ img {
 }
 
 .facts__number {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 7px;
   font-size: 4.8rem;
   font-weight: 700;
@@ -457,13 +457,13 @@ img {
   transition: box-shadow .5s ease, transform .5s ease;
 }
 
-.team__avatar img {
-  width: 100%;
-}
-
 .team__avatar:hover {
   box-shadow: 10px 10px 0 0 #95e1d3;
   transform: translate(-10px, -10px);
+}
+
+.team__avatar img {
+  width: 100%;
 }
 
 .team__avatar::after {
@@ -1173,7 +1173,6 @@ input[type="email"]:hover {
   .facts__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
   }
 
   .facts__item {
