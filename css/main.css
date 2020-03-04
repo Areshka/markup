@@ -152,6 +152,7 @@ img {
   left: 0;
   margin-right: -15px;
   margin-left: -15px;
+  background-color: rgba(232, 137, 130, .9);
   visibility: hidden;
   transform: scaleY(0);
   transform-origin: 0 0;
@@ -161,14 +162,12 @@ img {
 .nav-active .nav__list {
   visibility: visible;
   transform: scaleY(1);
-  background-color: rgba(232, 137, 130, .9);
 }
 
 .nav__item a {
   display: block;
   padding: 10px 15px;
   color: #fff;
-  text-decoration: none;
   text-transform: uppercase;
   transition: color .3s ease;
 }
@@ -1158,6 +1157,10 @@ input[type="email"]:hover {
 
 @media (min-width: 576px) {
 
+  .nav__list--icon a {
+    margin-right: 10px;
+  }
+
   .banner p {
     font-size: 3.5rem;
   }
@@ -1323,87 +1326,6 @@ input[type="email"]:hover {
 
 @media (min-width: 768px) {
 
-  .page-header__inner {
-    padding-bottom: 0;
-  }
-
-  .page-nav {
-    align-self: flex-end;
-  }
-
-  .nav__toggle {
-    display: none;
-  }
-
-  .nav__list {
-    position: static;
-    display: flex;
-    visibility: visible;
-    transform: scaleY(1);
-  }
-
-  .nav__item {
-    padding: 0 28px;
-  }
-
-  .nav__list--icon {
-    margin-right: -20px;
-    margin-left: 16px;
-  }
-
-  .nav__list--icon .nav__item {
-    padding: 0 20px;
-  }
-
-  .nav__item a {
-    position: relative;
-    display: inline-block;
-    padding: 5px 0;
-  }
-
-  .nav__item a:hover {
-    background-color: transparent;
-  }
-
-  .nav__item a::before {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    right: 0;
-    width: 0;
-    height: 2px;
-    background-color: #fce38a;
-    transition: width .4s ease;
-  }
-
-  .nav__item a:hover::before {
-    left: 0;
-    width: 100%;
-  }
-
-  .nav__list--icon .nav__item a::before {
-    display: none;
-  }
-
-  .nav__list--icon {
-    margin-bottom: -2px;
-  }
-
-  .nav__list--icon a {
-    padding: 0;
-  }
-
-  .nav__list--icon .icon {
-    width: 18px;
-    height: 18px;
-    fill: #fff;
-    transition: fill .3s ease;
-  }
-
-  .nav__list--icon .icon-cart {
-    height: 14px;
-  }
-
   .banner p {
     font-size: 4.5rem;
   }
@@ -1527,6 +1449,93 @@ input[type="email"]:hover {
 }
 
 @media (min-width: 992px) {
+
+  .page-header__inner {
+    padding-bottom: 0;
+  }
+
+  .nav-active .page-header {
+    background-color: transparent;
+  }
+
+  .page-nav {
+    align-self: flex-end;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    position: static;
+    display: flex;
+    background-color: transparent;
+    visibility: visible;
+    transform: scaleY(1);
+  }
+
+  .nav__item {
+    padding: 0 28px;
+  }
+
+  .nav__list--icon {
+    margin-right: -20px;
+    margin-left: 16px;
+  }
+
+  .nav__list--icon .nav__item {
+    padding: 0 20px;
+  }
+
+  .nav__item a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+  }
+
+  .nav__item a:hover {
+    background-color: transparent;
+  }
+
+  .nav__item a::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fce38a;
+    transition: width .4s ease;
+  }
+
+  .nav__item a:hover::before {
+    left: 0;
+    width: 100%;
+  }
+
+  .nav__list--icon .nav__item a::before {
+    display: none;
+  }
+
+  .nav__list--icon {
+    margin-bottom: -2px;
+  }
+
+  .nav__list--icon a {
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .nav__list--icon .icon {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+    transition: fill .3s ease;
+  }
+
+  .nav__list--icon .icon-cart {
+    height: 14px;
+  }
 
   .banner {
     background-position: 0 0;
