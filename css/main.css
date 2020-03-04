@@ -284,6 +284,7 @@ img {
   color: #fff;
   border: 3px solid #fff;
   outline: none;
+  cursor: pointer;
 }
 
 .btn--banner {
@@ -595,9 +596,6 @@ img {
 }
 
 .work__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   text-align: center;
 }
 
@@ -698,7 +696,6 @@ img {
 
 .testimonial__avatar {
   margin-bottom: 25px;
-  border-radius: 50%;
 }
 
 .testimonial__avatar img {
@@ -1048,12 +1045,9 @@ input[type="email"]:hover {
 
 .subscribe__btn {
   padding: 11px 34px;
-  font-family: "Montserrat";
-  font-size: 0.933rem;
-  line-height: 1.25;
-  font-weight: 700;
+  font-family: "Montserrat";  
+  line-height: 1.25;  
   background-color: #95e1d3;
-  cursor: pointer;
   border: none;
   transition: background-color .3s linear;
 }
