@@ -1,5 +1,4 @@
-# markup
-Mogo - Module project A-Level
+# Mogo - Module project A-Level
 
 Технические требования
 
